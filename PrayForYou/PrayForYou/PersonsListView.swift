@@ -21,7 +21,7 @@ struct PersonsListView: View {
                     HStack {
                         Text(person.name)
                         Image(systemName: "arrow.forward")
-                        Text(person.isPrayingFor?.name ?? "")
+                        Text(person.isPrayingFor ?? "")
                     }
                 }
                 .onDelete(perform: deleteObjects)
@@ -40,6 +40,9 @@ struct PersonsListView: View {
             EditButton()
         }
         ToolbarItem(placement: .topBarTrailing) {
+            Button("Draw", action: drawPersons)
+        }
+        ToolbarItem(placement: .topBarTrailing) {
             Button("Add", systemImage: "plus", action: add)
         }
     }
@@ -54,6 +57,28 @@ struct PersonsListView: View {
             modelContext.delete(person)
         }
     }
+
+    private func drawPersons() {
+        var targetPersons = persons.shuffled()
+        for person in persons {
+            person.isPrayingFor = drawPerson(for: person.name)
+        }
+
+        func drawPerson(for name: String) -> String {
+            var resultName = ""
+            repeat {
+                guard let randomName = targetPersons.randomElement()?.name
+                else {
+                    continue
+                }
+                resultName = randomName
+            } while resultName == name
+            targetPersons.removeAll { $0.name == resultName }
+            return resultName
+        }
+    }
+
+
 }
 
 #Preview {
