@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PrayForYouApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PersonsListView()
         }
+        .modelContainer(for: Person.self)
     }
 }

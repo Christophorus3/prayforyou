@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E89A1AB2B25D21D005F6384 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89A1AA2B25D21D005F6384 /* Person.swift */; };
+		9E89A1AD2B25D56D005F6384 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E89A1AC2B25D56D005F6384 /* PersonDetailView.swift */; };
 		9ED6E8212B1BA5E700A00355 /* PrayForYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6E8202B1BA5E700A00355 /* PrayForYouApp.swift */; };
-		9ED6E8232B1BA5E700A00355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6E8222B1BA5E700A00355 /* ContentView.swift */; };
+		9ED6E8232B1BA5E700A00355 /* PersonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6E8222B1BA5E700A00355 /* PersonsListView.swift */; };
 		9ED6E8252B1BA5EA00A00355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED6E8242B1BA5EA00A00355 /* Assets.xcassets */; };
 		9ED6E8282B1BA5EA00A00355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED6E8272B1BA5EA00A00355 /* Preview Assets.xcassets */; };
 		9ED6E8322B1BA5EA00A00355 /* PrayForYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED6E8312B1BA5EA00A00355 /* PrayForYouTests.swift */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E89A1AA2B25D21D005F6384 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9E89A1AC2B25D56D005F6384 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		9ED6E81D2B1BA5E700A00355 /* PrayForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED6E8202B1BA5E700A00355 /* PrayForYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayForYouApp.swift; sourceTree = "<group>"; };
-		9ED6E8222B1BA5E700A00355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9ED6E8222B1BA5E700A00355 /* PersonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListView.swift; sourceTree = "<group>"; };
 		9ED6E8242B1BA5EA00A00355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ED6E8272B1BA5EA00A00355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9ED6E82D2B1BA5EA00A00355 /* PrayForYouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrayForYouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				9ED6E8202B1BA5E700A00355 /* PrayForYouApp.swift */,
-				9ED6E8222B1BA5E700A00355 /* ContentView.swift */,
+				9ED6E8222B1BA5E700A00355 /* PersonsListView.swift */,
+				9E89A1AC2B25D56D005F6384 /* PersonDetailView.swift */,
 				9ED6E8242B1BA5EA00A00355 /* Assets.xcassets */,
 				9ED6E8262B1BA5EA00A00355 /* Preview Content */,
+				9E89A1AA2B25D21D005F6384 /* Person.swift */,
 			);
 			path = PrayForYou;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ED6E8232B1BA5E700A00355 /* ContentView.swift in Sources */,
+				9E89A1AB2B25D21D005F6384 /* Person.swift in Sources */,
+				9E89A1AD2B25D56D005F6384 /* PersonDetailView.swift in Sources */,
+				9ED6E8232B1BA5E700A00355 /* PersonsListView.swift in Sources */,
 				9ED6E8212B1BA5E700A00355 /* PrayForYouApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PrayForYou/Preview Content\"";
+				DEVELOPMENT_TEAM = K6YDQ7N662;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PrayForYou/Preview Content\"";
+				DEVELOPMENT_TEAM = K6YDQ7N662;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
